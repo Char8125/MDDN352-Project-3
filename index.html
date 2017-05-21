@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+	<meta name = "viewport" content ="width = device-width, initial-scale =1">
+	<link rel="stylesheet" href ="style.css" media ="screen, handheld, screen">
+	<script type="text/javascript" src="script.js"</script>
+	<script type="text/javascript" src="script2.js"</script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7xDbsy9lYm7KPSD57CXG20ikw1kMd-yQ&libraries=places"></script>
+	
+    <title>Peek </title>
+
+			<style>
+
+		  /* Optional: Makes the sample page fill the window. */
+	@media screen and (max-width: 480px){
+			.mapContainer{
+				 height: 380px;
+				 width:100%;
+			}
+		
+			 #map {
+				 left:8vw;
+				 height:30vw;
+				 width:30vw
+			 }
+		 }
+
+		     #map {
+			 left:8vw;
+             height:30vw;
+			 width:30vw
+         }
+
+		 
+         #right-panel {
+             font-family: 'Roboto', 'sans-serif';
+             line-height: 30px;
+             padding-left: 10px;
+         }
+
+             #right-panel select,
+             #right-panel input {
+                 font-size: 15px;
+             }
+
+             #right-panel select {
+                 width: 100%;
+             }
+
+             #right-panel i {
+                 font-size: 12px;
+             }
+	
+		</style>
+
+</head>
+<script>
+	$(document).ready(function(){
+		$("#map").hide();
+		$("#food").click(function(){
+			$("#all").slideUp();
+			$("#drink").slideUp();
+			$("#map").fadeIn();
+			
+		});
+		$("#all").click(function(){
+			$("#food").slideUp();
+			$("#drink").slideUp();
+			$("#map").fadeIn();
+		});
+		$("#drink").click(function(){
+			$("#all").slideUp();
+			$("#food").slideUp();
+			$("#map").fadeIn();
+		});
+			$("p").click(function(){
+				$("#all").slideDown();
+				$("#food").slideDown();
+				$("#drink").slideDown();
+				$("#map").hide();
+		});
+
+});
+</script>
+
+<body>
+
+	<div class = "main">
+	<div class = "back">BACK</div>
+		<ul class="flex-container">
+			<li class ="item-container">
+				<div class = "flex-item">
+					<div id = "food">
+						<img  src="http://placehold.it/350x350">
+						<p>Food</p>
+					</div>
+					<div id = "all">
+						<img id="all" src="http://placehold.it/350x350">
+						<p>Both</p>
+					</div>
+					<div id = "drink">
+						<img  src="http://placehold.it/350x350">
+						<p>All</p>
+					</div>
+				</div>	
+				<div id="map"></div>
+			<div>
+			
+			</li>    
+				
+			
+			 
+		</ul>
+			
+
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7xDbsy9lYm7KPSD57CXG20ikw1kMd-yQ&libraries=places&callback=initAutocomplete" async defer></script>.
+	
+
+</html>

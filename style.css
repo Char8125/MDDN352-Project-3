@@ -1,0 +1,288 @@
+﻿
+
+#back{}
+
+
+html,
+body {
+    background: white;
+    overflow-x: hidden;
+    height: 100%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+	.img:hover#food{
+	
+	}
+	#all{
+	
+	}
+	#drink{
+	
+	}
+
+
+
+
+.name {
+    font-size: 2.3vw;
+    margin-left: 30vw;
+    position: relative;
+    font-family: "helvetica";
+    height: 10vh;
+    max-width: 100%;
+    margin-right: 20vw;
+}
+.header-container {
+    max-width: 130%;
+    background-color: #fff5e0;
+    margin-right: -20%;
+    margin-left: -15%;
+    margin-top: -5%;
+    height: 110%;
+    max-width: 120%;
+    max-height: 110%;
+}
+.banner {
+    position: relative;
+    font-family: "helvetica";
+    height: 10vh;
+    max-width: 100%;
+    margin-right: 50vw;
+    padding: 20%;
+}
+.art {
+    flex: 1;
+    color: black;
+    font-size: 1em;
+}
+.flex-container {
+	flex-flow: row wrap;
+    list-style: none;
+    -ms-box-orient: vertical;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    position: relative;
+    padding: 2px;
+}
+.flex-item {
+    flex: 3 30%;
+    font-family: "helvetica";
+    line-height: 20px;
+    opacity: 0.8;
+    padding: 5px;
+    text-align: left;
+    font-size: 1.5em;
+    max-width: 30vw;
+    padding: 10vw;
+}
+.title {
+    text-align: left;
+    flex: 1;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #005981;
+}
+.flex-item:nth-of-type(1) {
+    flex-grow: 1;
+}
+.flex-item:nth-of-type(2) {
+    background: #ebebe9;
+}
+.flex-item:nth-of-type(3) {
+    flex-grow: 1;
+    padding-left: 16vw;
+}
+.flex-item:nth-of-type(4) {
+    background: #ebebe9;
+}
+.flex-item:nth-of-type(5) {
+    flex-grow: 1;
+}
+.mobile {
+    width: 20vw;
+}
+@media screen and (max-width: 480px) {
+    .title {
+        text-align: center;
+        flex: 1;
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #005981;
+    }
+    .name {
+        font-size: 7vw;
+        margin-top: 10px;
+        margin-left: 15vw;
+        position: relative;
+        font-family: "helvetica";
+        height: 10vh;
+        max-width: 100%;
+        margin-right: 6vw;
+    }
+    h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .mobile {
+        width: 80vw;
+    }
+    .art {
+        flex: 1;
+        color: black;
+        font-size: 1em;
+        padding: 5px;
+    }
+    .header {
+        font-family: "helvetica";
+        font-size: 2.5em;
+    }
+    .banner {
+        font-family: "helvetica";
+        height: 8vh;
+        width: auto;
+        max-width: 100%;
+        margin-right: -150px;
+        margin-left: 16%;
+        padding: 10px;
+        padding-top: 90%;
+        #map {
+            height: 480px;
+            width: 480px;
+        }
+    }
+    /* Always set the map height explicitly to define the size of the div
+        * element that contains the map. */
+    /* Optional: Makes the sample page fill the window. */
+    
+   
+    #description {
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    #infowindow-content .title {
+        font-weight: bold;
+    }
+    #infowindow-content {
+        display: none;
+    }
+    #map #infowindow-content {
+        display: inline;
+    }
+    .pac-card {
+        margin: 10px 10px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        font-family: Roboto;
+    }
+    #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+    }
+    .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+    }
+    .pac-controls label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+    }
+    #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 42px;
+    }
+    #pac-input:focus {
+        border-color: #4d90fe;
+    }
+    #title {
+        color: #fff;
+        background-color: #4d90fe;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 6px 12px;
+    }
+    #target {
+        width: 345px;
+    }
+    #right-panel {
+        font-family: 'Roboto', 'sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+    }
+    #right-panel select,
+    #right-panel input {
+        font-size: 15px;
+    }
+    #right-panel select {
+        width: 100%;
+    }
+    #right-panel i {
+        font-size: 12px;
+    }
+    #right-panel {
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        right: 5px;
+        top: 60%;
+        margin-top: -195px;
+        height: 330px;
+        width: 200px;
+        padding: 5px;
+        z-index: 5;
+        border: 1px solid #999;
+        background: #fff;
+    }
+    h2 {
+        font-size: 22px;
+        margin: 0 0 5px 0;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        height: 271px;
+        width: 200px;
+        overflow-y: scroll;
+    }
+    li {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    li:nth-child(odd) {
+        background-color: #fcfcfc;
+    }
+    #more {
+        width: 100%;
+        margin: 5px 0 0 0;
+    }
+
