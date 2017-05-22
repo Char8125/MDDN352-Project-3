@@ -18,12 +18,14 @@
 		  /* Optional: Makes the sample page fill the window. */
 	@media screen and (max-width: 480px){
 			.mapContainer{
-				 height: 380px;
-				 width:100%;
+				position:absolute;
+				left:-30vw;
+				 height: 10vw;
+				 width:10vw;
 			}
 		
 			 #map {
-				 left:8vw;
+				 
 				 height:10vw;
 				 width:10vw;
 			 }
@@ -31,8 +33,8 @@
 
 		     #map {
 			
-             height:10vw;
-			 width:10vw;
+             height:30vw;;
+			 width:30vw;
          }
 
 		 
@@ -92,30 +94,36 @@
 	<div class = "main">
 	<div class = "back">BACK</div>
 		<ul class="flex-container">
-			
-				<li class = "flex-item">
 					<div id = "food">
-						<img  src="http://placehold.it/350x350">
-						<p>Food</p>
-					</div>		
-				</li>    
-				<li class = "flex-item">
-					<div id = "all">
+						<li class = "flex-item">
+							<img  src="http://placehold.it/350x350">
+							<p>Food</p>
+						</li>    
+					</div>				
+				<div id = "all">
+					<li class = "flex-item">
 						<img id="all" src="http://placehold.it/350x350">
 						<p>Both</p>
-					</div>
-				</li>
-				<li class = "flex-item">
-					<div id = "drink">
-						<img  src="http://placehold.it/350x350">
-						<p>All</p>
-					</div>
-				</li>
+					</li>
+				</div>
 				
+					<div id = "drink">
+					<li class = "flex-item">
+						<img  src="http://placehold.it/350x350">
+
+						<p>All</p>
+						</li>
+					</div>
+				
+			<div class = "mapContainer">
+				<li class = "flex-item">
+					<div id="map"></div>
+				</li>
+			</div>
 					
 				
 		</ul>
-			<div id="map"></div>
+		
 
     </div>
 

@@ -109,15 +109,7 @@ img {
     flex-grow: 1;
     padding-left: 16vw;
 }
-.flex-item:nth-of-type(4) {
-    background: #ebebe9;
-}
-.flex-item:nth-of-type(5) {
-    flex-grow: 1;
-}
-.mobile {
-    width: 20vw;
-}
+
 @media screen and (max-width: 480px) {
     .title {
         text-align: center;
